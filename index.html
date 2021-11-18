@@ -6,73 +6,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>You Communik</title>
+    <!--css-->
     <link rel="stylesheet" href="./public/css/style.css">
+    <!--police-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="shadow_box">
+    
+    <!--header-->
         <header>
-            <!--nav logo-->
-            <img src="./public/img/logo-horizontal-fond-noir-couleur.png" alt="Logo YouCommunik ...to make it happen">
 
-            <!--menu-->
+        <!--nav logo-->
+            <div class="logo">
+                <img src="./public/img/logo-horizontal-fond-noir-couleur.png" alt="Logo YouCommunik ...to make it happen">
+            </div>
+
+        <!--menu-->
             <nav>
                 <ul>
             <!--Home-->
                 <li>
                     <a href="">
-                    <img src="./public/img/home-icon.png" alt="Aller vers Home">
+                        <img class="active" src="./public/img/home-icon.png" alt="Aller vers Home">Home
                     </a>
                 </li>
             <!--Packages-->
                 <li>
                     <a href="">
-                    <img src="./public/img/packages-icon.png" alt="Aller vers Packages">
+                        <img src="./public/img/packages-icon.png" alt="Aller vers Packages">Packages
                     </a>
                 </li>
             <!--Outils-->
                 <li>
                     <a href="">
-                    <img src="./public/img/outils-icon.png" alt="Aller vers Outils">
+                        <img src="./public/img/outils-icon.png" alt="Aller vers Outils">Outils
                     </a>
                 </li>
-            <!--Contact-->
+            <!--Projets-->
                 <li>
                     <a href="">
-                    <img src="./public/img/projets-icon.png" alt="Aller vers Projets">
+                        <img class="nav_img" src="./public/img/projets-icon.png" alt="Aller vers Projets">Projets
                     </a>
                 </li>
-            <!--Contact-->
+            <!--Temoignages-->
                 <li>
-                    <a href="">
-                    <img src="./public/img/temoignages-icon.png" alt="Aller vers Temoignages">
+                    <a class="nav_img" href="">
+                        <img src="./public/img/temoignages-icon.png" alt="Aller vers Temoignages">Temoignages
                     </a>
-                </li>
+                    </li>
             <!--Contact-->
                 <li>
-                    <a href="">
-                    <img src="./public/img/contact-icon.png" alt="Aller vers Contact">
+                    <a class="nav_img" href="">
+                        <img src="./public/img/contact-icon.png" alt="Aller vers Contact">Contact
                     </a>
                 </li>
                 </ul>
             </nav>
 
-            <!--tagline-->
-            <div>
+        </header>    
+
+
+    <!--Content commence-->
+
+    <!--Intro-->
+        <section class="intro">
+            <div class="image">
                 <img src="./public/img/packages.png" alt="Image d'un paquet">
-                    <p>À chaque étape son pack</p>
-                    <p>naître, grandir et prospérer.</p>
-                </img>
             </div>
 
-        </header>
+            <div class="text">
+                <h2>À chaque étape son pack</h2>
+                <h3>naître, grandir et prospérer.</h3>
+            </div>
+        </section>
 
+        
 
+    <!--Eclosion-->
         <section class="eclosion">
             <h2>Éclosion</h2>
 
-            <div>
+            <div class="image">
                 <img src="./public/img/icon-eclosion.png" alt="Image d'un oeuf qui craque">
+            </div>
+
+            <div class="text">
                 <p>Le pack Éclosion est parfait pour le début d'une activité.</p>
                 <p>Il comprend la création de votre identité graphique, incluant votre logo et un support de prospection pour aller à la rencontre vos futurs clients, ainsi qu'un site internet single page pour avoir une présence en ligne.</p>
             </div>
@@ -97,10 +119,14 @@
             </div>
         </section>
 
+    <!--Evolution-->
         <section class="evolution">
             <h2>Évolution</h2>
-            <div>
+            <div class="image">
                 <img src="./public/img/icon-evolution.png" alt="Image d'un oeuf qui s'oeuvre avec une arbre dedans">
+            </div>
+
+            <div class="text">
                 <p>Le pack Évolution vous propose une identité visuelle complète, comprenant la création de votre logo, de la charte graphique et de vos cartes de visite.</p>
                 <p>Il intègre également le développement d'un site vitrine afin d'informer 24/7, d'être contacté, d'analyser le flux de vos visites,... et de faire un lien vers vos réseaux sociaux.</p>
             </div>
@@ -130,11 +156,15 @@
             </div>
         </section>
 
+    <!--Envol-->
         <section class="envol">
             <h2>Envol</h2>
 
-            <div>
+            <div class="image">
                 <img src="./public/img/icon-envole.png" alt="Image d'un mongolfière">
+            </div>
+
+            <div class="text">
                 <p>Le pack Envol est destiné à accroître cotre visibilité, clientèle et notoriété, tout en diminuant vos coûts et en garantissant le meilleur retour sur investissement.</p>
                 <p>Il comporte un service d'analyse de votre cible et des flux de votre trafic internet, afin d'utiliser les paramètres les plus adéquats pour la diffusion de vos campagnes.</p>
             </div>
@@ -159,27 +189,50 @@
             </div>
         </section>
 
+
+        
+    <!--footer-->
         <footer>
-            <section>
-                <!--Liens du Packs-->
+            <section class="footer">
+            <!--Liens du Packs-->
                 <div>
-                    <p></p>
-                    <img src="./public/img/icon-eclosion.png" alt="Aller vers Éclosion">
-                    <img src="./public/img/icon-evolution.png" alt="Aller vers Évolution">
-                    <img src="./public/img/icon-envole.png" alt="Aller vers Envol">
+
+                    <a href="">Packs
+                        <img src="./public/img/icon-eclosion.png" alt="Aller vers Éclosion">
+                    </a>
+
+                    <a href="">
+                        <img src="./public/img/icon-evolution.png" alt="Aller vers Évolution">
+                    </a>
+
+                    <a href="">
+                        <img src="./public/img/icon-envole.png" alt="Aller vers Envol">
+                    </a>
                 </div>
-                <!--Liens du Outils-->
+            <!--Liens du Outils-->
                 <div>
-                    <p></p>
-                    <img src="./public/img/identite-graphique.png" alt="Aller vers Identité">
-                    <img src="./public/img/reseaux-sociaux.png" alt="Aller vers Reseaux sociaux">
-                    <img src="./public/img/print.png" alt="Aller vers Print">
+
+                    <a href="">Outils
+                        <img src="./public/img/identite-graphique.png" alt="Aller vers Identité">
+                    </a>
+
+                    <a href="">
+                        <img src="./public/img/reseaux-sociaux.png" alt="Aller vers Reseaux sociaux">
+                    </a>
+
+                    <a href="">
+                        <img src="./public/img/print.png" alt="Aller vers Print">
+                    </a>
                 </div>
-                <!--Liens du Social Media-->
+            <!--Liens du Social Media-->
                 <div>
-                    <p></p>
-                    <img src="./public/img/social-f.png" alt="Aller vers Facebook">
-                    <img src="./public/img/google-plus.png" alt="Aller vers Google+">
+                    <a href="">Social Media
+                        <img src="./public/img/social-f.png" alt="Aller vers Facebook">
+                    </a>
+
+                    <a href="">
+                        <img src="./public/img/google-plus.png" alt="Aller vers Google+">
+                    </a>
                 </div>
             </section>
 

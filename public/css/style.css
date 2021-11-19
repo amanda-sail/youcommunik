@@ -23,6 +23,12 @@ h3 {
     margin-top: 15px;
 }
 
+/*NOTE: 
+body {
+    margin: 0 20%;
+    box-shadow: 0px 0px 100px gray;
+    font-family: 'Ubuntu', sans-serif;
+*/
 
 /*Page container*/
 .shadow_box {
@@ -122,6 +128,7 @@ section {
     height: 150px;
     margin-top: 40px;
 }
+/*NOTE: When you put flex-direction column the align-items changes axis and works like justify content normally would. They reverse their purpose.*/
 section > .image > img {
     height: 175px;
     width: 175px;
@@ -131,6 +138,7 @@ section > .image > img {
     margin-left: 75px;
     margin-right: 75px;
 }
+/*NOTE: You shouldn't use large margins because it plays with the pixels of your page. Better to put .image and .text as flex:1 and the section in a display-flex.*/
 /*Liens*/
 .links {
     display: flex;

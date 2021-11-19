@@ -128,7 +128,7 @@ section {
     height: 150px;
     margin-top: 40px;
 }
-/*NOTE: When you put flex-direction column the align-items changes axis and works like justify content normally would. They reverse their purpose.*/
+/*NOTE: git lWhen you put flex-direction column the align-items changes axis and works like justify content normally would. They reverse their purpose.*/
 section > .image > img {
     height: 175px;
     width: 175px;

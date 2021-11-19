@@ -169,33 +169,28 @@ section > .image > img {
 
 /*Footer commence*/
 footer {
-    height: 100px;
-}
-.footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background: #393A3B;
+    padding: 50px;
 }
-.footer > ul {
-    flex: 1;
-}
-.footer > ul > li > a {
-    text-decoration: none;
-    color: whitesmoke;
+h6 {
     font-size: 16px;
-    text-transform: none;
-    font-weight: bold;
+    color: whitesmoke;
+    margin: 0px 0px 50px 10px;
 }
-.footer > ul > li > a > img {
+footer > section {
+    display: flex;
+    align-items: center;
+}
+footer > section > a > img {
     height: 50px;
     width: 50px;
-    object-fit: contain;
-    padding-top: 15px;
+    margin: 50px 10px 0px 10px;
 }
 footer > p {
     text-align: right;
     font-size: 12px;
     color: whitesmoke;
+    padding-right: 10px;
+    padding-bottom: 20px;
 }
 /*Footer finit*/

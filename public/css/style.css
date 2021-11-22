@@ -129,7 +129,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 150px;
     margin-top: 40px;
 }
 /*NOTE: git When you put flex-direction column the align-items changes axis and works like justify content normally would. They reverse their purpose.*/
@@ -222,7 +221,7 @@ footer > p {
         height: 100px;
         width: 100px;
         object-fit: contain;
-        margin-left: 15px;
+        margin-left: 10px;
     }
     li {
         font-size: 8px;

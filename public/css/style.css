@@ -90,8 +90,10 @@ li > a >img {
 
 
 /*Articles commence*/
-/*Intro*/
-.intro {
+
+
+/*Banner*/
+.banner {
     background: #334D5C;
     display: flex;
     justify-content: center;
@@ -120,6 +122,8 @@ li > a >img {
     width: 100%;
     text-align: left;
 }
+
+
 /*Articles*/
 section {
     display: flex;
@@ -128,7 +132,7 @@ section {
     height: 150px;
     margin-top: 40px;
 }
-/*NOTE: git lWhen you put flex-direction column the align-items changes axis and works like justify content normally would. They reverse their purpose.*/
+/*NOTE: git When you put flex-direction column the align-items changes axis and works like justify content normally would. They reverse their purpose.*/
 section > .image > img {
     height: 175px;
     width: 175px;
@@ -141,14 +145,20 @@ section > .image > img {
 /*NOTE: You shouldn't use large margins because it plays with the pixels of your page. Better to put .image and .text as flex:1 and the section in a display-flex.*/
 /*Liens*/
 .links {
-    display: flex;
     align-items: center;
     justify-content: center;
     background-color: #EAE3D6;
 }
 .links > ul {
     width: 80%;
+} /*
+#evolution > .links > ul {
+    display: flex;
+    flex-wrap: wrap;
 }
+#evolution > .links > ul > li {
+    flex: 25%;
+} */
 .links > ul > li {
     text-transform: none;  /*removes uppercase*/
     font-size: 16px;
@@ -170,27 +180,121 @@ section > .image > img {
 /*Footer commence*/
 footer {
     background: #393A3B;
-    padding: 50px;
+    padding: 20px;
+    color: whitesmoke;
 }
 h6 {
     font-size: 16px;
-    color: whitesmoke;
-    margin: 0px 0px 50px 10px;
+    margin: 0px 0px 30px 10px;
 }
 footer > section {
     display: flex;
     align-items: center;
+    margin: 0;
 }
-footer > section > a > img {
+footer > section > div {
+    margin: 0 50px;
+}
+footer > section > div > a > img {
     height: 50px;
     width: 50px;
-    margin: 50px 10px 0px 10px;
+    margin: 0 5px;
 }
 footer > p {
     text-align: right;
     font-size: 12px;
-    color: whitesmoke;
     padding-right: 10px;
-    padding-bottom: 20px;
 }
 /*Footer finit*/
+
+
+
+/* Media Query pour Téléphone */
+@media screen and (max-width: 576px) {
+    .shadow_box {
+        margin: 0; 
+        box-shadow: none;
+    }
+    header {
+        height: 50px;
+    }
+    .logo > img {
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+        margin-left: 15px;
+    }
+    li {
+        font-size: 8px;
+        margin-right: 10px;
+        text-transform: capitalize;
+    }
+    li > a >img {
+        height: 25px;
+        width: 25px;
+        padding-bottom: 5px; /*gap b/n image & text*/
+    }
+    .banner {
+        height: 100px;
+    }
+    .image > img {
+        height: 75px;
+        width: 75px;
+    }
+    h2 {
+        font-size: 25px;
+        margin-top: 25px;
+        margin-right: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 150px;
+    }
+    h3 {
+        color: whitesmoke;
+        font-weight: 400;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+    section {
+        height: 75px;
+        margin-top: 20px;
+    }
+    section > .image > img {
+        height: 85px;
+    }
+    .text > p {
+        margin-left: 35px;
+        margin-right: 35px;
+        font-size: 10px;
+    }
+    .links > ul > li {
+        font-size: 10px;
+    }
+    .links > ul > li > a > img {
+        height: 30px;
+        width: 30px;
+        margin-left: 25px;
+        margin-right: 25px;
+        padding-bottom: 5px; /*gap b/n image & text*/
+    }
+    footer {
+        padding: 10px;
+    }
+    h6 {
+        font-size: 10px;
+        margin: 0px 0px 15px 5px;
+    }
+    footer > section > div {
+        margin: 0 25px;
+    }
+    footer > section > div > a > img {
+        height: 25px;
+        width: 25px;
+        margin: 0 5px;
+    }
+    footer > p {
+        text-align: right;
+        font-size: 8px;
+        padding-right: 5px;
+    }
+}

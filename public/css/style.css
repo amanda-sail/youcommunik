@@ -144,33 +144,38 @@ section > .image > img {
 /*NOTE: You shouldn't use large margins because it plays with the pixels of your page. Better to put .image and .text as flex:1 and the section in a display-flex.*/
 /*Liens*/
 .links {
-    align-items: center;
-    justify-content: center;
     background-color: #EAE3D6;
+    padding: 30px;
 }
 .links > ul {
-    width: 80%;
-} /*
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+} 
 #evolution > .links > ul {
     display: flex;
     flex-wrap: wrap;
 }
 #evolution > .links > ul > li {
-    flex: 25%;
-} */
+    flex: 20%;
+} 
 .links > ul > li {
     text-transform: none;  /*removes uppercase*/
     font-size: 16px;
+    flex: 1;
 }
 .links > ul > li > a {
     color: black;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .links > ul > li > a > img {
     height: 75px;
     width: 75px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 10px; /*gap b/n image & text*/
+    padding-bottom: 20px; /*gap b/n image & text*/
 }
 /*Articles finit*/
 
